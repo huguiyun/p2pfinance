@@ -1,26 +1,25 @@
 package com.p2p.sys.utils.dao;
 
-import com.p2p.base.utils.Query;
+
 import com.p2p.sys.utils.entity.User;
 import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
 
 /**
  * (User)表数据库访问层
  *
  * @author makejava
- * @since 2019-10-21 20:37:24
+ * @since 2019-10-22 12:23:56
  */
 public interface UserDao {
 
     /**
      * 通过ID查询单条数据
      *
-     * @param userid 主键
+     * @param userId 主键
      * @return 实例对象
      */
-    User queryById(Integer userid);
+    User queryById(Integer userId);
 
     /**
      * 查询指定行数据
@@ -59,11 +58,9 @@ public interface UserDao {
     /**
      * 通过主键删除数据
      *
-     * @param userid 主键
+     * @param userId 主键
      * @return 影响行数
      */
-    int deleteById(Integer userid);
-
-    List<User> queryPager(Query query);
+    int deleteById(Integer userId);
 
 }

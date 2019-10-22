@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="p2pfinance:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>p2pfinance</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="p2pfinance.war">
+      <element id="artifact" artifact-name="p2pfinance:war exploded" />
+    </root>
+  </artifact>
+</component>

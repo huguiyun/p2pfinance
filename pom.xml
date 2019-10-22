@@ -286,7 +286,7 @@
                 <includes>
                     <include>*.properties</include>
                     <include>*.xml</include>
-                    <include>mapper/*/*.xml</include>
+                    <include>**/*.xml</include>
                 </includes>
             </resource>
         </resources>
@@ -308,7 +308,7 @@
                     <artifactId>mybatis-generator-maven-plugin</artifactId>
                     <version>1.3.2</version>
                     <dependencies>
-                        <!--使用Mybatis-generator插件不能使用太高版本的mysql驱动 -->
+                       <!-- &lt;!&ndash;使用Mybatis-generator插件不能使用太高版本的mysql驱动 &ndash;&gt;-->
                         <dependency>
                             <groupId>mysql</groupId>
                             <artifactId>mysql-connector-java</artifactId>
@@ -319,6 +319,8 @@
                         <overwrite>true</overwrite>
                     </configuration>
                 </plugin>
+
+
             </plugins>
         </pluginManagement>
     </build>
