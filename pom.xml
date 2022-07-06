@@ -53,7 +53,7 @@
         <servlet.version>4.0.0</servlet.version>
         <log4j2.version>2.9.1</log4j2.version>
         <slf4j.version>1.7.7</slf4j.version>
-        <log4j2.disruptor.version>3.2.0</log4j2.disruptor.version>        <shiro.version>1.2.5</shiro.version>
+        <log4j2.disruptor.version>3.2.0</log4j2.disruptor.version>        <shiro.version>1.9.1</shiro.version>
 
     </properties>
 
